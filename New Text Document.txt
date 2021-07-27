@@ -1,0 +1,18 @@
+const toggle_icon = document.querySelector('.toggle-icon');
+const close_icon = document.querySelector(".close-icon");
+const menu = document.querySelector('.sidebar');
+
+if (toggle_icon) {
+    toggle_icon.addEventListener('click', () => {
+        menu.classList.add('show_menu');
+    })
+}
+
+
+if (close_icon) {
+    close_icon.addEventListener('click', () => {
+        menu.classList.remove('show_menu');
+    })
+}
+
+const body = document.querySelector('body');
